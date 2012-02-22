@@ -48,7 +48,7 @@ function M.getstr (...)
     return curses.stdscr():getstr(...)
   end
 end
-M.getnstr = getstr
+M.getnstr = M.getstr
 
 function M.getyx ()    return curses.stdscr():getyx() end
 function M.keypad (b)  return curses.stdscr():keypad(b) end
